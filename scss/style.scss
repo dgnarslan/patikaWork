@@ -11,8 +11,6 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -41,7 +39,7 @@ body {
     }
     .navbar {
       width: 100%;
-      height: 60px;
+      height: calc(100% - 80px);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -185,7 +183,7 @@ body {
       flex-direction: column;
       .about-me-txt {
         width: 100%;
-        height: 50%;
+        height: 60%;
         h4 {
           margin-bottom: 20px;
           font-size: 28px;
@@ -470,6 +468,253 @@ body {
     }
     .about-me-card {
       margin: 100px auto 50px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    .banner {
+      height: 480px;
+      background-position: 55% 0%;
+      .author {
+        width: 75%;
+      }
+    }
+    .about-me-card {
+      width: 80%;
+    }
+    .skills-container {
+      text-align: start;
+      h4 {
+        width: 80%;
+      }
+      .skills-content {
+        width: 80%;
+      }
+    }
+    .content-box {
+      .content {
+        width: calc(100% / 3 - 20px);
+      }
+    }
+    .contact-form-container {
+      .contact-form-box {
+        width: 50%;
+      }
+      .contact-info-box {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    .about-me-card {
+      width: 100%;
+      height: 780px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      margin: 100px 0;
+      .about-me-leftbar {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .about-me-rightbar {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .content-box {
+      height: 1200px;
+      flex-direction: column;
+      align-items: space-between;
+      .content {
+        width: 60%;
+        height: calc(100% / 3 - 40px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    .contact-form-container {
+      flex-direction: column;
+      .contact-form-box {
+        width: 80%;
+      }
+      .contact-info-box {
+        width: 90%;
+        height: 40%;
+      }
+    }
+    .skills-container {
+      text-align: start;
+      padding: 0 10px;
+      h4 {
+        width: 80%;
+      }
+      .skills-content {
+        width: 100%;
+      }
+    }
+    .footer {
+      height: 100px;
+      flex-direction: column-reverse;
+      padding-bottom: 10px;
+      .social-ico {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: calc(100% - 10px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    .header {
+      height: 280px;
+      .navbar {
+        flex-direction: column;
+        .navbar-content {
+          width: 100%;
+          height: 60px;
+          a {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .banner {
+      .author {
+        h4 {
+          font-size: 36px;
+        }
+      }
+    }
+    .about-me-card {
+      width: 100%;
+      height: 960px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 100px 0;
+      .about-me-leftbar {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .about-me-rightbar {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .about-me-txt {
+          height: 50%;
+        }
+        .about-me {
+          flex-direction: column;
+          padding: 10px 0;
+          span {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .skills-container {
+      margin: 0;
+      height: 360px;
+    }
+    .content-box {
+      height: 1400px;
+      flex-direction: column;
+      align-items: space-between;
+      margin: 0;
+      .content {
+        width: 80%;
+        height: calc(80% / 3 - 20px);
+      }
+    }
+    .contact-form-container {
+      flex-direction: column;
+      padding: 0 10px;
+      .contact-form-box {
+        width: 90%;
+      }
+      .contact-info-box {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    .about-me-card {
+      width: 100%;
+      height: 960px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 100px 0;
+      .about-me-leftbar {
+        .about-me-img {
+          width: 240px;
+          height: 240px;
+        }
+      }
+      .about-me-rightbar {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .about-me-txt {
+          height: 70%;
+          h4 {
+            text-align: center;
+          }
+        }
+        .about-me {
+          flex-direction: column;
+          padding: 10px 0;
+          span {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .container {
+    .content-box {
+      height: 1600px;
+      .content {
+        width: 80%;
+        height: calc(100% / 3 - 20px);
+      }
     }
   }
 }
