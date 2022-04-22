@@ -582,6 +582,19 @@ body {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .content-box {
+    height: 1400px;
+    flex-direction: column;
+    align-items: space-between;
+    margin: 0;
+    .content {
+      width: 80%;
+      height: calc(90% / 3 - 20px);
+    }
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .container {
     .header {
@@ -642,16 +655,7 @@ body {
       margin: 0;
       height: 360px;
     }
-    .content-box {
-      height: 1400px;
-      flex-direction: column;
-      align-items: space-between;
-      margin: 0;
-      .content {
-        width: 80%;
-        height: calc(90% / 3 - 20px);
-      }
-    }
+
     .contact-form-container {
       flex-direction: column;
       padding: 0 10px;
